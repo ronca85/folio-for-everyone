@@ -1,3 +1,7 @@
 module.exports = {
-	markdownTemplateEngine: false
-}
+	markdownTemplateEngine: false,
+	dir: {
+		input: "_site",
+		output: "public"
+	}
+};
