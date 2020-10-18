@@ -1,0 +1,22 @@
+<section class="o-section">
+	{% if skills %}
+	<ul>
+		{%- for category in skills.category -%}
+		<li>
+			<article>
+				<h1>{{ category.title }}</h1>
+				{% if category %}
+				<ul>
+					{%- for tools in category.tools -%}
+					<li>
+						{{ tools.name }}
+					</li>
+					{%- endfor -%}
+				</ul>
+				{%- endif -%}
+			</article>
+		</li>
+		{%- endfor -%}
+	</ul>
+	{%- endif -%}
+</section>

@@ -1,0 +1,11 @@
+<section class="o-section">
+	<ul>
+		{%- for project in work.project -%}
+		<li>
+			<a href="{{ project.url }}">
+				{{ project.text }}
+			</a>
+		</li>
+		{%- endfor -%}
+	</ul>
+</section>

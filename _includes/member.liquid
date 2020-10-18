@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<body
+		{% if page.customColors %}
+			style="background-color: {{ page.background }}; color: {{ page.color }};"
+		{% endif %}
+	>
+
+		{% include header.liquid %}
+		
+		{% if content %}
+			<section class="o-content">
+				{{ content }}
+			</section>
+		{% endif %}
+
+		{% if intro.show %}
+			{% include intro.liquid %}
+		{% endif %}
+		
+		{% if about.show %}
+			{% include about.liquid %}
+		{% endif %}
+		
+		{% if skills.show %}
+			{% include skills.liquid %}
+		{% endif %}
+		
+		{% if work.show %}
+			{% include work.liquid %}
+		{% endif %}
+		
+		{% if thanks.show %}
+			{% include thanks.liquid %}
+		{% endif %}
+		
+		{% if footer.show %}
+			{% include footer.liquid %}
+		{% endif %}
+
+	</body>
+</html>
