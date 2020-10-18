@@ -1,0 +1,36 @@
+
+.c-pieces {
+	text-align: right;
+}
+
+.c-pieces-label_part {
+	overflow: hidden;
+	display: inline-block;
+
+	@media (max-width:$to-medium) {
+		font-size: rem(20px);
+		letter-spacing: .5px;
+		margin-top: rem(40px);
+	}
+
+	@media (min-width: $from-medium) {
+		font-size: rem(30px);
+		letter-spacing: 1.5px;
+	}
+
+	span {
+		display: inline-block;
+		transform: translateY(100%);
+		transition: transform $speed $easing;
+	}
+}
+
+@for $i from 1 through 4 {
+	.c-pieces.is-inview {
+
+		.c-pieces-label_part.-delay-#{$i} span {
+			transition-delay: .25 + $i*0.045s;
+			transform: none;
+		}
+	}
+}

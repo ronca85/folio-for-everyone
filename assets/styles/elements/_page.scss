@@ -1,0 +1,82 @@
+// ==========================================================================
+// Base / Page
+// ==========================================================================
+
+//
+// Simple page-level setup.
+//
+// 1. Set the default `font-size` and `line-height` for the entire project,
+//    sourced from our default variables.
+// 2. Ensure the page always fills at least the entire height of the viewport.
+//
+html {
+    min-height: 100%; /* [2] */
+    background-color: $black;
+    color: $white;
+    font-family: $font-family;
+    font-weight: $light;
+    line-height: $line-height; /* [1] */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: $to-small) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $from-small) and (max-width: $to-medium) {
+        font-size: 13px;
+    }
+
+    @media (min-width: $from-medium) and (max-width: $to-large) {
+        font-size: 14px;
+    }
+
+    @media (min-width: $from-large) and (max-width: $to-huge) {
+        font-size: $font-size; /* [1] */
+    }
+
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {
+        font-size: 21px;
+    }
+
+    @media (min-width: $from-colossal) {
+        font-size: 24px;
+    }
+
+    &.is-loading {
+        cursor: wait;
+        overflow: hidden;
+    }
+
+    &.has-scroll-smooth {
+        overflow: hidden;
+    }
+
+    &.has-scroll-dragging {
+        user-select: none;
+    }
+}
+
+body {
+    .has-scroll-smooth & {
+        overflow: hidden;
+    }
+}
+
+::selection {
+    background-color: $selection-background-color;
+    color: $selection-text-color;
+    text-shadow: none;
+}
+
+a {
+    color: $link-color;
+
+    @include u-hocus {
+        color: $link-hover-color;
+    }
+}

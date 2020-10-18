@@ -1,0 +1,10 @@
+.o-wysiwyg {
+	
+	p:not([class]) { // any p without a class
+		margin-bottom: 1rem;
+
+		&:last-of-type { // if p is the last item of type paragraph in content use no margin bottom
+			margin-bottom: 0;
+		}
+	}
+}

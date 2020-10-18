@@ -1,0 +1,18 @@
+.c-jumplinks {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	max-height: 75vh;
+	margin: auto;
+	z-index: 100;
+	writing-mode: vertical-lr;
+	padding: 1rem;
+	pointer-events: none;
+
+	a {
+		pointer-events: all;
+	}
+}

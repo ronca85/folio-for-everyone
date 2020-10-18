@@ -1,0 +1,14 @@
+
+.o-sticky-wrap {
+	position: relative;
+}
+
+.o-sticky {
+	position: absolute;
+	height: 100%;
+	width: 0;
+	display: block;
+	pointer-events: none;
+	top: 0;
+	left: 0
+}

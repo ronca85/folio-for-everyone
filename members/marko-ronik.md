@@ -1,4 +1,13 @@
 ---
+head:
+  full_name: "Marko Ronik"
+  font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
+  meta:
+    title: "meta title"
+    description: "meta description"
+    url: ""
+    theme_color: "#f06"
+
 page:
   customColors: true
   background: "#f3bb1e"
@@ -26,6 +35,7 @@ about:
 
 skills:
   show: true
+  title: "Skills"
   category:
     - title: "Mockups"
       tools:
@@ -72,6 +82,7 @@ skills:
 
 work:
   show: true
+  title: "Work"
   project:
     - text: "Genesis Vision"
       url: "https://genesis.vision/"

@@ -1,0 +1,39 @@
+.c-button {
+    padding: rem(15px) rem(20px);
+    color: $white;
+    transition: background-color $speed $easing, color $speed $easing;
+
+    @include u-hocus {
+        color: $white;
+    }
+
+    &.-transition-primary {
+        position: relative;
+        overflow: hidden;
+        
+        &:before {
+            content: "";
+            transition: transform .3s cubic-bezier(.35,.755,.42,.95);
+            background: radial-gradient(circle,#fffb00,#f100bd);
+            background-size: 400%;
+            animation: colorSpin 10s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: scaleY(0);
+            transform-origin: center bottom;
+            transition: transform $speed $easing;
+        }
+        @include u-hocus {
+            color: $black;
+            &:before {
+                transform: scaleY(1);
+                transform-origin: center top;
+                animation-play-state: running;
+            }
+        }
+    }
+}

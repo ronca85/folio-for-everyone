@@ -1,0 +1,21 @@
+
+.o-section {
+	margin-top: 10vw;
+	padding-bottom: 30vw;
+	margin-bottom: 20vw;
+
+	@media (max-width: $to-small) {
+		margin-top: 20vw;
+		padding-bottom: 20vw;
+	}
+	
+	&.-github {
+		padding-bottom: 10vw;
+	}
+	
+	&.-thanks {
+		margin-top: 30vw;
+		margin-bottom: 0;
+		padding-bottom: 10vw;
+	}
+}

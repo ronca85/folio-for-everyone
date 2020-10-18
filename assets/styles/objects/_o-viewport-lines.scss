@@ -1,0 +1,44 @@
+
+$n-lines: 8;
+
+.o-viewport-lines {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+
+	@media (max-width: $to-medium) {
+		transform: rotateZ(40deg) scaleY(1.5);
+	}
+
+	.o-viewport-lines_item {
+		border-left: 1px solid $white;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		transform: scaleY(0);
+		transform-origin: top left;
+		opacity: .1;
+		transition: transform $speed * 7 $easing-long;
+
+		html.is-loaded & {
+			transform: scaleY(1) translateX(0);
+		}
+
+		@for $i from 1 through $n-lines {
+			&:nth-child(#{$i}) {
+				left: 100% / $n-lines * $i;
+
+				@media (max-width: $to-medium) {
+					transition-delay: 1 + $i*0.075s;
+				}
+				
+				@media (min-width: $from-medium) {
+					transition-delay: 2 + $i*0.25s;
+				}
+			}
+		}
+	}
+}

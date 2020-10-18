@@ -1,0 +1,14 @@
+
+.o-labelled-card {
+	margin-top: 5vw;
+	padding-bottom: rem(30px);
+}
+
+.o-labelled-card_inner {
+	&.-vertical {
+		@media (max-width: $to-medium) {
+			writing-mode: vertical-lr;
+			transform: rotateZ(180deg);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.c-contact-blob {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 2rem;
+	line-height: 1;
+	z-index: 10;
+	writing-mode: vertical-lr;
+}
+
+.c-contact-blob_icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 1rem;
+}

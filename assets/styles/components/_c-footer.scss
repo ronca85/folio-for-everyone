@@ -1,0 +1,35 @@
+.c-footer {
+	background: linear-gradient(to bottom, lighten($black, 5%), $black);
+	padding: 4rem 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+
+.c-footer_link {
+	font-size: 1.25rem;
+	font-weight: 500;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 0.5rem 0;
+}
+
+.o-footer-anim {
+	transform: translateY(150%) rotateZ(25deg);
+	transform-origin: top left;
+	opacity: 0;
+	transition: transform $speed * 2 $easing, opacity $speed * 2 $easing;
+
+	&.is-inview {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@for $i from 1 through 7 {
+	.o-footer-anim.is-inview {
+		&.-delay-#{$i} {
+			transition-delay: 0.5 + $i*0.15s;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+
+.c-goto-button {
+	margin-top: 3rem;
+
+	&:hover .c-goto-button_label_part {
+		opacity: 1;
+		transform: none;
+	}
+
+	&:hover .c-goto-button_arrow {
+		transform: translateY(1rem);
+	}
+}
+
+.c-goto-button_label {
+	display: block;
+	word-break: break-word;
+}
+
+.c-goto-button_label_part {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(1rem);
+	transition: opacity $speed * 2 $easing, transform $speed * 2 $easing;
+}
+
+.c-goto-button_arrow {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(100%) rotate(-135deg);
+	transition: opacity $speed * 2 $easing, transform $speed * 2 $easing;
+
+
+	&.is-inview {
+		opacity: 1;
+		transform: none;
+		transition-delay: .75s;
+	}
+}

@@ -1,0 +1,9 @@
+
+.o-hr-line {
+	transform: scaleX(0);
+	transition: transform $speed $easing;
+
+	&.is-inview {
+		transform: scaleX(1);
+	}
+}

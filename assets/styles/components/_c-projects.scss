@@ -1,0 +1,121 @@
+
+.c-projects {
+	position: relative;
+	margin-top: 3rem;
+	padding-bottom: 7.5rem;
+	opacity: 0;
+	transform: translateY(60px);
+	transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
+
+	&.is-inview {
+		opacity: 1;
+		transform: none;
+		transition-delay: .2s;
+	}
+}
+
+.c-projects_item {
+	overflow: hidden;
+	margin-top: -1rem;
+}
+
+.c-projects_item_row {
+	position: relative;
+	font-size: 5vw;
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(60px);
+	transition: opacity .6s cubic-bezier(.215,.61,.355,1), transform .6s cubic-bezier(.215,.61,.355,1);
+
+	@media (min-width: $from-small) {
+	}
+	@media (max-width: $to-small) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	&:hover {
+		transition-delay: 0s !important;
+	}
+
+	&.is-inview {
+		opacity: 1;
+		transform: none;
+		transition-delay: .15s;
+	}
+
+	sup {
+		line-height: 1;
+		// background: inherit;
+		display: block;
+		white-space: nowrap;
+		position: absolute;
+		left: 1.25rem;
+		bottom: 0;
+		top: auto;
+		transform: translateY(100%) skewX(12deg);
+		transition: transform $speed * 2 $easing, opacity $speed * 2 $easing;
+		pointer-events: none;
+		transform-origin: bottom left;
+		padding-bottom: 1rem;
+		opacity: 0;
+
+		@media (max-width: $to-small) {
+			font-size: 50%;
+		}
+
+		@media (min-width: $from-small) {
+			font-size: 25%;
+		}
+
+		@media (min-width: $from-medium) {
+			left: 1.75em;
+		}
+	}
+}
+
+.c-projects_item_icon {
+	// position: absolute;
+	// top: auto;
+	// left: auto;
+	display: inline-block;
+	vertical-align: top;
+	transition: transform $speed * 2 $easing;
+	// display: flex;
+	// align-items: center;
+	// padding-bottom: 1rem;
+	transform: none;
+
+	@media (min-width: $from-small) {
+		height: 100%;
+	}
+}
+
+.c-projects_item_row:hover .c-projects_item_icon {
+	transform: translate(25%, 25%);
+}
+
+.c-projects_item_label {
+	display: block;
+	background: inherit;
+	transform: none;
+	transition: transform $speed * 2 $easing;
+	transition-delay: .05s;
+	padding-bottom: 1rem;
+	transform-origin: top left;
+
+	@media (min-width: $from-small) {
+		letter-spacing: -0.25rem;
+	}
+	@media (max-width: $to-small) {
+	}
+}
+
+.c-projects_item_row:hover .c-projects_item_label {
+	transform: skewX(12deg);
+}
+
+.c-projects_item_row:hover sup {
+	transform: skewX(12deg);
+	opacity: 1;
+}
