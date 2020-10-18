@@ -1,0 +1,9 @@
+.o-title {
+	@media (min-width: $from-small) {
+	}
+	@media (max-width: $to-small) {
+		transform: rotateZ(-50deg);
+		width: 100%;
+		text-align: center;
+	}
+}

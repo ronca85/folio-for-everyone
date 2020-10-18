@@ -1,0 +1,51 @@
+
+.o-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: rem(24px);
+	height: rem(24px);
+
+	&.-cw90 {
+		transform: rotate(90deg);
+	}
+
+	&.-cw180 {
+		transform: rotate(180deg);
+	}
+
+	&.-ccw-90 {
+		transform: rotate(-90deg);
+	}
+
+	&.-ccw-135 {
+		transform: rotate(-135deg);
+	}
+
+	&.-medium-icon {
+		@media (max-width: $to-medium) {
+			width: rem(28px);
+			height: rem(28px);
+		}
+		@media (min-width: $from-medium) {
+			width: rem(50px);
+			height: rem(50px);
+		}
+	}
+
+	&.-large-icon {
+		@media (max-width: $to-medium) {
+			width: rem(48px);
+			height: rem(48px);
+		}
+		@media (min-width: $from-medium) {
+			width: rem(64px);
+			height: rem(64px);
+		}
+	}
+
+	svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,56 @@
+.c-block-intro {
+	margin-top: 5vw;
+	margin-bottom: rem(120px);
+	font-size: rem(18px);
+
+	@media (max-width: $to-small) {
+		margin-left: 20vw;
+	}
+	@media (min-width: $from-small) {
+		margin-left: 25%;
+	}
+}
+
+.c-block-intro_emphasis {
+	float: left;
+	width: 50%;
+	line-height: 1.25;
+	position: relative;
+	padding-left: 2rem;
+
+	@media (max-width: $to-small) {
+		font-size: 1.75rem;
+		margin-right: 1.75rem;
+		margin-bottom: 1.75rem;
+		margin-top: 1.75rem;
+		margin-left: -20vw;
+	}
+	@media (min-width: $from-small) {
+		font-size: 2rem;
+		margin-right: 2rem;
+		margin-bottom: 1 + 1.125 / 2 + em;
+		margin-top: 2rem;
+		margin-left: -25%;
+	}
+
+	&:before {
+		content: "";
+		width: rem(8px);
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $white;
+		transform: rotateZ(-75deg) scaleY(0) translateX(-100px) translateY(-25%);
+		transform-origin: bottom left;
+		opacity: 0;
+		transition: transform $speed * 3 $easing, opacity $speed * 2 $easing;
+	}
+
+	&.is-inview {
+		&:before {
+			transform: none;
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.c-display {
+	font-size: 7vw;
+	line-height: 1;
+	font-weight: 300;
+	text-align: center;
+
+	@media (max-width:$to-medium) {
+		letter-spacing: rem(-5px);
+	}
+
+	@media (min-width: $from-medium) {
+		letter-spacing: rem(-15px);
+	}
+}
+
+.c-display_row {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid $white;
+	padding: 1rem 0;
+
+	&.is-inview .c-display_char {
+		transform: none;
+	}
+
+	.c-display_char {
+		display: inline-block;
+		transform: translate3d(0,150%,0);
+		transition: transform $speed * 2 $easing;
+	}
+}
+
+@for $i from 1 through 12 {
+	.c-display_row.is-inview {
+
+		.c-display_char.-delay-#{$i} {
+			transition-delay: 0.15 + $i*0.045s;
+		}
+	}
+}

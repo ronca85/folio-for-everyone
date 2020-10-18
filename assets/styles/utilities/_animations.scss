@@ -1,0 +1,23 @@
+
+@keyframes colorSpin {
+	0% {
+		filter: hue-rotate(0deg)
+	}
+
+	25% {
+		background-position: 0 100%
+	}
+
+	50% {
+		background-position: 60% 80%;
+		filter: hue-rotate(140deg)
+	}
+
+	75% {
+		background-position: 60% 100%
+	}
+
+	to {
+		filter: hue-rotate(0deg)
+	}
+}

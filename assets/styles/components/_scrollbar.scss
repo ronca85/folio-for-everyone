@@ -1,0 +1,46 @@
+.c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100vh;
+    padding: 0 8px;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 10;
+
+    &:hover {
+        .c-scrollbar_thumb:before {
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+
+    &:hover, .has-scroll-scrolling &, .has-scroll-dragging & {
+        opacity: 1;
+    }
+}
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    cursor: grab;
+
+    &:before {
+        content: "";
+        background-color: $white;
+        width: 100%;
+        height: 100%;
+        border-radius: 9999px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleX(.25);
+        transition: transform 0.3s;
+    }
+
+    .has-scroll-dragging & {
+        cursor: grabbing;
+    }
+}

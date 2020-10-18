@@ -1,0 +1,35 @@
+.o-button-rail {
+	height: 6rem;
+	padding: 0.5rem 1.5rem;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 0;
+	overflow: hidden;
+	z-index: 1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.o-button-rail_label {
+	animation: buttonRail 3s linear infinite;
+	display: inline-block;
+	font-size: 1rem;
+	padding-bottom: 2rem;
+	animation-delay: 2s;
+	transition: letter-spacing $speed $easing, font-weight $speed $easing, color $speed $easing;
+
+	.o-button-rail:hover & {
+		letter-spacing: 3px;
+		font-weight: 900;
+		color: $white;
+	}
+}
+
+@keyframes buttonRail {
+	0% {
+		transform: translateZ(0);
+	}
+	to {
+		transform: translate3d(0, -100%, 0);
+	}
+}

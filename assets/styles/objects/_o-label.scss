@@ -1,0 +1,29 @@
+
+.o-label {
+	font-size: 1rem;
+	display: block;
+	margin-bottom: .625rem;
+
+	&.-dot:before {
+		content: "";
+		position: relative;
+		width: .625rem;
+		height: .625rem;
+		border-radius: 50%;
+		background-color: currentColor;
+		display: inline-block;
+		margin-right: .625rem;
+	}
+}
+
+.o-labelled-card_inner.-vertical {
+	@media (max-width: $to-medium) {
+		.o-label.-dot {
+			margin-bottom: 0;
+			&:before {
+				margin-right: 0;
+				margin-bottom: .625rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.o-image-list {
+	@media (max-width:$to-medium) {
+		font-size: 0;
+		margin-bottom: -1rem;
+	}
+}
+
+.o-image-list_item {
+	@media (min-width: $from-small) {
+		position: relative;
+	}
+
+	@media (max-width:$to-medium) {
+		width: 50%;
+		display: inline-block;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+	}
+}
+
+.o-image-wrap {
+	@media (min-width: $from-small) {
+		position: absolute;
+		top: auto;
+		left: auto;
+		height: 100%;
+
+		&.-left-image {
+			margin-top: 15vw;
+			margin-left: 10%;
+			width: 40%;
+		}
+		&.-left-image > * {
+			transform: rotateZ(-3deg);
+		}
+
+		&.-right-image {
+			margin-top: 10vw;
+			margin-left: 50%;
+			width: 30%;
+		}
+		&.-right-image > * {
+			transform: rotateZ(5deg);
+		}
+	}
+	}

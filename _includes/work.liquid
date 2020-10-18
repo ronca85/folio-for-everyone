@@ -1,11 +1,20 @@
 <section class="o-section">
-	<ul>
-		{%- for project in work.project -%}
-		<li>
-			<a href="{{ project.url }}">
-				{{ project.text }}
-			</a>
-		</li>
-		{%- endfor -%}
-	</ul>
+	<div class="o-container">
+		<div class="o-layout -gutter">
+			<div class="o-layout_item u-1/2@from-medium">
+				{{ work.title }}
+			</div>
+			<div class="o-layout_item u-1/2@from-medium">
+				<ul>
+					{%- for project in work.project -%}
+					<li>
+						<a href="{{ project.url }}">
+							{{ project.text }}
+						</a>
+					</li>
+					{%- endfor -%}
+				</ul>
+			</div>
+		</div>
+	</div>
 </section>

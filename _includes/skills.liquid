@@ -1,22 +1,31 @@
 <section class="o-section">
-	{% if skills %}
-	<ul>
-		{%- for category in skills.category -%}
-		<li>
-			<article>
-				<h1>{{ category.title }}</h1>
-				{% if category %}
+	<div class="o-container">
+		<div class="o-layout -gutter">
+			<div class="o-layout_item u-1/2@from-medium">
+				{{ skills.title }}
+			</div>
+			<div class="o-layout_item u-1/2@from-medium">
+				{% if skills %}
 				<ul>
-					{%- for tools in category.tools -%}
+					{%- for category in skills.category -%}
 					<li>
-						{{ tools.name }}
+						<article>
+							<h1>{{ category.title }}</h1>
+							{% if category %}
+							<ul>
+								{%- for tools in category.tools -%}
+								<li>
+									{{ tools.name }}
+								</li>
+								{%- endfor -%}
+							</ul>
+							{%- endif -%}
+						</article>
 					</li>
 					{%- endfor -%}
 				</ul>
 				{%- endif -%}
-			</article>
-		</li>
-		{%- endfor -%}
-	</ul>
-	{%- endif -%}
+			</div>
+		</div>
+	</div>
 </section>

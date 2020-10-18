@@ -1,0 +1,47 @@
+
+
+.o-anim, .o-anim-hover {
+	display: block;
+	transition: transform .9s cubic-bezier(.35,.755,.42,.95);
+	transform: translateY(102%);
+	background: radial-gradient(circle,#fffb00,#f100bd);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	animation: colorSpin 10s linear infinite;
+	animation-play-state: paused;
+}
+
+.o-anim-hover {
+	-webkit-text-fill-color: $white;
+	&:hover {
+		animation-play-state: running;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.is-ie .o-anim {
+	background: transparent;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
+	.is-firefox .o-anim {
+		animation: none!important;
+	}
+}
+
+.is-inview .o-anim {
+	animation-play-state: running;
+}
+
+.o-name_title_row {
+	@for $i from 1 through 2 {
+		&:nth-child(#{$i}) .o-anim {
+			transition-delay: $i*0.25s;
+		}
+	}
+}
+
+html.is-loaded .o-anim {
+	transform: translateY(0);
+}

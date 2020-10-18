@@ -1,0 +1,13 @@
+.c-summary-card {
+	word-break: break-word;
+}
+
+.c-summary-card_block {
+	margin-bottom: 4rem;
+	opacity: 0;
+	transition: opacity $speed * 2 $easing;
+
+	&.is-inview {
+		opacity: 1;
+	}
+}

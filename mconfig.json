@@ -1,0 +1,30 @@
+{
+  "url": "folio-for-everyone",
+  "src": "./assets/",
+  "dest": "./public/",
+  "build": "./build/",
+  "styles": {
+    "src": "./assets/styles/",
+    "dest": "./public/assets/styles/",
+    "main": "main"
+  },
+  "scripts": {
+    "src": "./assets/scripts/",
+    "dest": "./public/assets/scripts/",
+    "main": "app",
+    "vendors": {
+      "src": "./assets/scripts/vendors/",
+      "main": "vendors"
+    }
+  },
+  "svgs": {
+    "src": "./assets/images/sprite/",
+    "dest": "./public/assets/images/"
+  },
+  "modules": {
+    "build": "gulp",
+    "style": "sass",
+    "script": "js",
+    "view": false
+  }
+}

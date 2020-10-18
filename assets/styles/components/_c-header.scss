@@ -1,0 +1,44 @@
+.c-header {
+	font-weight: $medium;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
+
+	@media (max-width:$to-medium) {
+		flex-direction: column;
+		padding: 1rem;
+	}
+}
+.c-header_item {
+}
+.c-header-label {
+	font-size: 0;
+}
+.c-header-label_part {
+	font-size: 1rem;
+	letter-spacing: 1.5px;
+	overflow: hidden;
+	display: inline-block;
+
+	span {
+		display: inline-block;
+		transform: translateY(100%);
+		transition: transform $speed $easing;
+	}
+}
+
+@for $i from 1 through 24 {
+	html.is-loaded {
+
+		.c-header-label_part.-delay-#{$i} span {
+			transition-delay: 1.25 + $i*0.045s;
+			transform: none;
+		}
+	}
+}
