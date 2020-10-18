@@ -1,0 +1,22 @@
+{
+  "name": "folio-for-everyone",
+  "version": "1.0.0",
+  "description": "## Uses 11ty to generate your page",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build:eleventy": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronca85/folio-for-everyone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronca85/folio-for-everyone/issues"
+  },
+  "homepage": "https://github.com/ronca85/folio-for-everyone#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
