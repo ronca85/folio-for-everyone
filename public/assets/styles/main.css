@@ -770,6 +770,7 @@ html.is-loaded .o-transition_item {
   left: 0; }
 
 .o-section {
+  overflow: hidden;
   padding-top: 10vh; }
 
 .o-section_inner {
@@ -1149,6 +1150,7 @@ html.is-loaded .o-transition_item {
   vertical-align: middle; }
 
 .c-site-footer {
+  overflow: hidden;
   padding-top: 10vh; }
 
 .c-site-footer_inner {

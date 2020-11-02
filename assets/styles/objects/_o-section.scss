@@ -2,6 +2,7 @@
 $section_offset: 20vh;
 
 .o-section {
+	overflow: hidden;
 	padding-top: $section_offset / 2;
 	
 	@media (max-width: $to-small) {
