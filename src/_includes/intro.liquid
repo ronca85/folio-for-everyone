@@ -1,0 +1,41 @@
+<section class="o-section || o-sticky-wrap" data-scroll-section>
+	<div class="o-container -small">
+		<span class="o-sticky" id="stop-sticky-intro-line"></span>
+		<div class="o-section-line-wrap" data-scroll data-scroll-offset="25%">
+			<div class="o-section-line" data-scroll data-scroll-sticky data-scroll-target="#stop-sticky-intro-line">
+				<div class="o-section-line_inner"></div>
+			</div>
+		</div>
+
+		<div class="o-section_inner || o-sticky-wrap">
+			<span class="o-sticky" id="stop-sticky-intro"></span>
+			<div class="o-layout -gutter-small">
+				<div class="o-layout_item u-1/3@from-small u-1/2@from-medium">
+					<div class="c-sidebar-card" data-scroll data-scroll-offset="15%">
+						<h1 class="c-heading -h3 || o-title" data-scroll data-scroll-delay="0.7" data-scroll-sticky data-scroll-target="#stop-sticky-intro">
+							<span>
+								{{ intro.title }}
+							</span>
+						</h1>
+					</div>
+				</div>
+				<div class="o-layout_item u-2/3@from-small u-1/2@from-medium">
+					<div class="o-wysiwyg">
+						{% if intro %}
+							{%- for description in intro.description -%}
+								<p
+									class="o-anim-item -paragraph -delay-{{ forloop.index }}"
+									data-scroll data-scroll-offset="15%"
+								>
+									<span>
+										{{ description.paragraph }}
+									</span>
+								</p>
+							{%- endfor -%}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

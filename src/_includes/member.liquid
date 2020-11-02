@@ -10,13 +10,13 @@
 		<meta property="og:url" content="{{ page.url }}">
 		<meta property="og:site_name" content="{{ head.meta.site_name }}">
 		<meta property="og:title" content="{{ head.meta.title }}">
-		<meta property="og:image" content="../../assets/images/favicons/banner.png">
+		<meta property="og:image" content="{{ head.meta.banner_url }}">
 		<meta property="og:description" content="{{ head.meta.description }}">
 
 		<meta property="twitter:card" content="summary">
 		<meta property="twitter:url" content="{{ page.url }}">
 		<meta property="twitter:title" content="{{ head.meta.title }}">
-		<meta property="twitter:image" content="../../assets/images/favicons/banner.png">
+		<meta property="twitter:image" content="{{ head.meta.banner_url }}">
 		<meta property="twitter:description" content="{{ head.meta.description }}">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,11 +25,11 @@
 		<meta name="application-name" content="{{ head.meta.title }}">
 		<meta name="theme-color" content="{{ head.theme_color }}">
 		<meta name="msapplication-TileColor" content="{{ head.theme_color }}">
-		<link rel="manifest" href="../../site.webmanifest">
-		<link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicons/favicon-16x16.png">
-		<link rel="mask-icon" href="../../assets/images/favicons/safari-pinned-tab.svg" color="{{ head.theme_color }}">
+		<link rel="manifest" href="../../assets/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png">
+		<link rel="mask-icon" href="../../assets/favicons/safari-pinned-tab.svg" color="{{ head.theme_color }}">
 
 		<link id="stylesheet" rel="stylesheet" href="../../assets/styles/main.css" media="all" onload="this.media='all'; this.onload=null; this.isLoaded=true">
 
@@ -44,25 +44,23 @@
 		<div data-load-container>
 
 			<div class="o-transition">
-				<div class="o-transition_row">
-					<div class="o-transition_item"></div>
-					<div class="o-transition_item"></div>
-				</div>
-				<div class="o-transition_row">
-					<div class="o-transition_item"></div>
-					<div class="o-transition_item"></div>
-				</div>
-				<div class="o-transition_row">
-					<div class="o-transition_item"></div>
-					<div class="o-transition_item"></div>
-				</div>
+				<div class="o-transition_item"
+					{% if page.customColors %}
+						style="background-color: {{ page.transition_1 }};"
+					{% endif %}
+				></div>
+				<div class="o-transition_item"
+					{% if page.customColors %}
+						style="background-color: {{ page.transition_2 }};"
+					{% endif %}
+				></div>
 			</div>
 
 			<div class="o-loader"></div>
+	
+			{% include header.liquid %}
 
 			<div class="o-scroll" data-module-scroll="main" id="goto-top">
-	
-				{% include header.liquid %}
 
 				{% if intro.show %}
 					{% include intro.liquid %}
@@ -80,13 +78,15 @@
 					{% include work.liquid %}
 				{% endif %}
 				
+				{% if socials.show %}
+					{% include socials.liquid %}
+				{% endif %}
+				
 				{% if thanks.show %}
 					{% include thanks.liquid %}
 				{% endif %}
 				
-				{% if footer.show %}
-					{% include footer.liquid %}
-				{% endif %}
+				{% include footer.liquid %}
 				
 			</div>
 		</div>

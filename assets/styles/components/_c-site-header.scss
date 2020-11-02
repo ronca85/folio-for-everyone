@@ -1,0 +1,22 @@
+
+.c-site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	pointer-events: none;
+}
+
+.c-site-header_inner {
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-site-header_inner_item {
+	// border-bottom: 1px solid $black;
+	display: inline-block;
+	vertical-align: middle;
+}

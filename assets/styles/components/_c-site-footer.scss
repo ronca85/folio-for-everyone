@@ -1,0 +1,41 @@
+
+.c-site-footer {
+	padding-top: 10vh;
+}
+
+.c-site-footer_inner {
+	padding-top: 10vh;
+	padding-bottom: 13vh;
+	font-size: 125%;
+}
+
+.c-site-footer_bottom {
+	padding-bottom: 2vh;
+	font-size: 75%;
+}
+
+.c-site-footer_item {
+
+	perspective: 600px;
+
+	@for $i from 1 through 6 {
+		&.-delay-#{$i} > * {
+			transition-delay: $speed * 6 + $i * 0.375s;
+		}
+	}
+
+	> * {
+		display: inline-block;
+		transform-style: preserve-3d;
+		transform: translate3d(0, 100%, 0) rotateZ(-15deg);
+		transform-origin: top right;
+		opacity: 0;
+		transition: opacity $speed * 8 $easing-long, transform $speed * 6 $easing-long;
+		transition-delay: $speed * 6;
+	}
+
+	&.is-inview > * {
+		transform: none;
+		opacity: 1;
+	}
+}

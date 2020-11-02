@@ -1,0 +1,57 @@
+<section class="o-section || o-sticky-wrap" data-scroll-section>
+	<div class="o-container -small">
+		<span class="o-sticky" id="stop-sticky-work-line"></span>
+		<div class="o-section-line-wrap" data-scroll data-scroll-offset="35%">
+			<div class="o-section-line" data-scroll data-scroll-sticky data-scroll-target="#stop-sticky-work-line">
+				<div class="o-section-line_inner"></div>
+			</div>
+		</div>
+
+		<div class="o-section_inner || o-sticky-wrap">
+			<span class="o-sticky" id="stop-sticky-work"></span>
+			<div class="o-layout -gutter-small">
+				<div class="o-layout_item u-1/3@from-small u-1/2@from-medium">
+					<div class="c-sidebar-card" data-scroll data-scroll-offset="25%">
+						<h1 class="c-heading -h3 || o-title" data-scroll data-scroll-delay="0.7" data-scroll-sticky data-scroll-target="#stop-sticky-work">
+							<div>
+								{{ work.title }}
+							</div>
+						</h1>
+					</div>
+				</div>
+				<div class="o-layout_item u-2/3@from-small u-1/2@from-medium">
+					{% if work %}
+					<ul>
+						{%- for project in work.project -%}
+						<li
+							class="o-anim-item"
+							data-scroll data-scroll-offset="25%"
+						>
+							<a href="{{ project.url }}" class="o-link -work" target="_blank" rel="nooponer noreferrer"
+								{% if page.customColors %}
+									style="color: {{ page.color }};"
+								{% endif %}
+							>
+								<span class="o-link_label">
+									{{ project.text }}
+								</span>
+								<span class="o-link_icon -external">
+									<span class="o-icon -ccw-135">
+										<svg role="img" class="o-link_icon_svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2v17.649l7.146-7.146.708.707L12 21.563 3.646 13.21l.708-.707 7.146 7.146V2h1z"/>
+										</svg>
+										<svg role="img" class="o-link_icon_svg -hover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2v17.649l7.146-7.146.708.707L12 21.563 3.646 13.21l.708-.707 7.146 7.146V2h1z"/>
+										</svg>
+									</span>
+								</span>
+							</a>
+						</li>
+						{%- endfor -%}
+					</ul>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

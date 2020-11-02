@@ -4,7 +4,10 @@
   "description": "## Uses 11ty to generate your page",
   "main": ".eleventy.js",
   "scripts": {
-    "build:eleventy": "eleventy"
+    "build:eleventy": "eleventy",
+    "start": "gulp",
+    "build": "gulp build",
+    "compile": "gulp compile"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,55 @@
+
+.c-skills-card {
+	position: relative;
+	// min-height: 30vh;
+	// margin-bottom: 5rem;
+
+	perspective: 600px;
+}
+
+.c-skills-card_title-wrap {
+	opacity: 0;
+	transform: rotateY(-60deg) translateY(20px);
+	transition: opacity $speed * 8 $easing-long, transform $speed * 8 $easing-long;
+
+	&.is-inview {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.c-skills-card_title {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	transform: rotateZ(-90deg) translateX(-100%) translateY(-50%);
+	transform-origin: bottom left;
+	font-size: rem(14px);
+	max-width: 70%;
+	text-align: right;
+}
+
+.c-skills-card_item {
+
+	perspective: 600px;
+
+	@for $i from 1 through 20 {
+		&.-delay-#{$i} > * {
+			transition-delay: $speed * 2 + $i * 0.25s;
+		}
+	}
+
+	> * {
+		display: inline-block;
+		transform-style: preserve-3d;
+		transform: translate3d(10%, -30%, 0) rotateX(-40deg) rotateZ(5deg);
+		transform-origin: bottom left;
+		opacity: 0;
+		transition: opacity $speed * 4 $easing-long, transform $speed * 4 $easing-long;
+	}
+
+	&.is-inview > * {
+		transform: none;
+		opacity: 1;
+	}
+}

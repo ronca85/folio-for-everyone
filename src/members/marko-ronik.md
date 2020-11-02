@@ -10,13 +10,10 @@ head:
 
 page:
   customColors: true
+  transition_1: "coral"
+  transition_2: "deepskyblue"
   background: "#f3bb1e"
-  color: "#010100"
-  socials:
-    - text: "Github"
-      url: "https://github.com/ronca85"
-    - text: "Linkedin"
-      url: "https://www.linkedin.com/in/roncha/"
+  color: "#714679"
 
 header:
   left: "2020"
@@ -26,12 +23,18 @@ header:
 intro:
   show: true
   title: "Howdy"
-  description: "Bok, ja sam Marko. Radim kao frontendaš nešto više od tri godine."
+  description:
+    - paragraph: "para 1... Bok, ja sam Marko. Radim kao frontendaš nešto više od tri godine."
+    - paragraph: "para 2... Bok, ja sam Marko. Radim kao frontendaš nešto više od tri godine. frontendaš nešto više od tri godine."
+    - paragraph: "para 3... Bok, ja sam Marko. Radim kao frontendaš nešto više od tri godine."
+    - paragraph: "para 4... Bok, ja sam Marko. Radim kao frontendaš nešto više od tri godine. frontendaš nešto više od tri godine. frontendaš nešto više od tri godine."
 
 about:
   show: true
   title: "About me"
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam repellendus. Nesciunt hic at rem aspernatur cum molestiae. Sunt delectus in itaque iste quo nemo eveniet, suscipit, numquam porro qui sequi minus corporis culpa quidem doloribus magnam natus! Rem, eius? Libero modi asperiores rerum?"
+  description:
+    - paragraph: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam repellendus. Nesciunt hic at rem aspernatur cum molestiae. Sunt delectus in itaque iste quo nemo eveniet, suscipit, numquam porro qui sequi minus corporis culpa quidem doloribus magnam natus! Rem, eius? Libero modi asperiores rerum?"
+    - paragraph: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam repellendus. Nesciunt hic at rem aspernatur cum molestiae. Sunt delectus in itaque iste quo nemo eveniet, suscipit, numquam porro."
 
 skills:
   show: true
@@ -89,6 +92,19 @@ work:
     - text: "Wambi"
       url: "https://wambi.org/"
 
-footer:
+socials:
   show: true
+  title: "Socials"
+  project:
+    - text: "Github"
+      url: "https://github.com/ronca85"
+    - text: "Linkedin"
+      url: "https://www.linkedin.com/in/roncha/"
+
+footer:
+  email:
+    show: true
+    address: "marko.ronik@gmail.com"
+    subject: "Folio inquiry"
+    body: "Contacting through folio page"
 ---

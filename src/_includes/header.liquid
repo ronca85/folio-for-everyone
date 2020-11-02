@@ -1,0 +1,19 @@
+<header class="c-site-header"
+	{% if page.customColors %}
+		style="background-color: {{ page.background }};"
+	{% endif %}
+>
+	<div class="o-container -small">
+		<div class="c-site-header_inner">
+			<div class="c-site-header_inner_item">
+				{{ header.left }}
+			</div>
+			<div class="c-site-header_inner_item">
+				{{ header.center }}
+			</div>
+			<div class="c-site-header_inner_item">
+				{{ header.right }}
+			</div>
+		</div>
+	</div>
+</header>

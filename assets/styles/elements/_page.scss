@@ -14,8 +14,9 @@ html {
     background-color: $black;
     color: $white;
     font-family: $font-family;
-    font-weight: $light;
+    font-weight: $medium;
     line-height: $line-height; /* [1] */
+    letter-spacing: -0.25px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -44,7 +45,7 @@ html {
     }
 
     @media (min-width: $from-colossal) {
-        font-size: 24px;
+        font-size: 1.4vw;
     }
 
     &.is-loading {
@@ -74,9 +75,32 @@ body {
 }
 
 a {
-    color: $link-color;
+    // color: $link-color;
 
-    @include u-hocus {
-        color: $link-hover-color;
+    // @include u-hocus {
+    //     color: $link-hover-color;
+    // }
+
+    &:not([target]) {
+
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: currentColor;
+            transform: scaleY(0.1);
+            transform-origin: bottom left;
+            transition: transform $speed * 2 $easing, opacity $speed $easing;
+        }
+
+        &:hover:before {
+            transform: none;
+            opacity: 0.2;
+        }
     }
 }

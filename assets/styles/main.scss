@@ -40,20 +40,22 @@
 // @import "objects/table";
 
 @import "objects/o-transition";
+@import "objects/o-link";
 @import "objects/o-icon";
-@import "objects/o-label";
-@import "objects/o-labelled-card";
+// @import "objects/o-label";
+// @import "objects/o-labelled-card";
 @import "objects/o-sticky";
-@import "objects/o-image-list";
-@import "objects/o-block-links";
-@import "objects/o-name";
-@import "objects/o-anim";
+// @import "objects/o-image-list";
+// @import "objects/o-block-links";
+// @import "objects/o-name";
+// @import "objects/o-anim";
 @import "objects/o-section";
 @import "objects/o-title";
-@import "objects/o-hr-line";
+// @import "objects/o-hr-line";
 @import "objects/o-wysiwyg";
-@import "objects/o-scroll-top";
-@import "objects/o-button-rail";
+@import "objects/o-anim-item";
+// @import "objects/o-scroll-top";
+// @import "objects/o-button-rail";
 // @import "objects/o-viewport-lines";
 
 // Vendors
@@ -67,7 +69,14 @@
 @import "components/button";
 @import "components/form";
 
-@import "components/c-header";
+// @import "components/c-header";
+@import "components/c-site-header";
+@import "components/c-site-footer";
+@import "components/c-sidebar-card";
+@import "components/c-collection";
+@import "components/c-socials-list";
+@import "components/c-skills-card";
+
 @import "components/c-footer";
 @import "components/c-goto-button";
 @import "components/c-scrollto";
@@ -89,7 +98,7 @@
 // ==========================================================================
 @import "utilities/ratio";
 @import "utilities/widths";
-// @import "utilities/align";
+@import "utilities/align";
 @import "utilities/helpers";
 // @import "utilities/states";
 // @import "utilities/spacing";

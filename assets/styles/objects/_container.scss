@@ -17,13 +17,27 @@
     margin-left: auto;
     max-width: rem($container-width + ($padding * 2));
 
-    @media (max-width: $to-small) {
+    @media (max-width: $to-tiny) {
         padding-right: rem(16px);
         padding-left: rem(16px);
     }
 
-    @media (min-width: $from-small) {
+    @media (min-width: $from-tiny) {
         padding-right: rem($padding);
         padding-left: rem($padding);
+    }
+
+    @media (min-width: $from-small) {
+        padding-right: rem($padding * 2);
+        padding-left: rem($padding * 2);
+    }
+
+    &.-small  {
+        @media (min-width: $from-large) {
+            max-width: 90%;
+        }
+        @media (min-width: $from-colossal) { // 2400 px
+            max-width: rem($container-width);
+        }
     }
 }

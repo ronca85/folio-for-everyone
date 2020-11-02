@@ -1,0 +1,44 @@
+
+.o-anim-item {
+
+	perspective: 600px;
+
+	@media (min-width: $from-small) {
+	}
+	@media (max-width: $to-small) {
+	}
+
+	@for $i from 1 through 20 {
+		&.-delay-#{$i} > * {
+			transition-delay: $speed * 2 + $i * 0.25s;
+		}
+		&.-medium-delay-#{$i} > * {
+			transition-delay: $speed * 2 + $i * 0.125s;
+		}
+		&.-short-delay-#{$i} > * {
+			transition-delay: $speed * 2 + $i * 0.075s;
+		}
+	}
+
+	> * {
+		display: inline-block;
+		transform-style: preserve-3d;
+		transform: translate3d(100px, -100%, 0) rotateX(-60deg) rotateZ(5deg);
+		transform-origin: bottom left;
+		opacity: 0;
+		transition: opacity $speed * 4 $easing-long, transform $speed * 4 $easing-long;
+	}
+
+	&.-network > * {
+		transform: translate3d(20%, -100%, 0);
+	}
+
+	&.-paragraph > * {
+		transform: translate3d(10%, -30%, 0) rotateX(-40deg) rotateZ(5deg);
+	}
+
+	&.is-inview > * {
+		transform: none;
+		opacity: 1;
+	}
+}

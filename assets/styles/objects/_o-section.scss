@@ -1,21 +1,41 @@
 
-.o-section {
-	margin-top: 10vw;
-	padding-bottom: 30vw;
-	margin-bottom: 20vw;
+$section_offset: 20vh;
 
+.o-section {
+	padding-top: $section_offset / 2;
+	
 	@media (max-width: $to-small) {
-		margin-top: 20vw;
-		padding-bottom: 20vw;
+		// margin-bottom: $section_offset;
 	}
 	
 	&.-github {
-		padding-bottom: 10vw;
 	}
-	
-	&.-thanks {
-		margin-top: 30vw;
-		margin-bottom: 0;
-		padding-bottom: 10vw;
+}
+
+.o-section_inner {
+	padding-top: $section_offset / 2;
+	min-height: 35vh;
+	// margin-top: $section_offset / 2;
+	// margin-bottom: $section_offset / 2;
+}
+
+.o-section-line_inner {
+	// margin-top: 1px;
+	padding-top: 1px;
+	border-top: 1px solid;
+	// margin-bottom: $section_offset / 2;
+	opacity: 0;
+	transform: rotateZ(-2deg) translateY($unit-small) scaleX(0.333);
+	transition: opacity $speed * 4 $easing-long, transform $speed * 6 $easing-long;
+	transition-delay: $speed;
+	transform-origin: top right;
+
+	.is-inview & {
+		opacity: 1;
+		transform: none;
+	}
+
+	.-delay-footer & {
+		transition-delay: $speed * 3;
 	}
 }

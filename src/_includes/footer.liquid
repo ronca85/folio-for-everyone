@@ -1,0 +1,26 @@
+<footer class="c-site-footer" data-scroll-section>
+	<div class="o-container -small">
+		<div class="o-section-line-wrap -delay-footer" data-scroll>
+			<div class="o-section-line">
+				<div class="o-section-line_inner"></div>
+			</div>
+		</div>
+		<div class="c-site-footer_inner">
+			<div class="c-site-footer_item -delay-1 || u-text-center" data-scroll>
+				<span>
+					{% if footer.email %}
+						Contact me by <a href="mailto:{{ footer.email.address }}?subject={{ footer.email.subject }}&body={{ footer.email.body }}" {% if page.customColors %} style="color: {{ page.color }};" {% endif %} >e-mail</a>
+					{% endif %}
+				</span>
+			</div>
+		</div>
+
+		<div class="c-site-footer_bottom">
+			<div class="c-site-footer_item -delay-2" data-scroll>
+				<span>
+					Updated {{ "now" | date: "%b %Y" }}
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
