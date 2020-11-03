@@ -9,9 +9,9 @@ After the new file is included Netlify takes over and generates your page
 
 ## MD file breakdown
 
-Use [this file](https://github.com/ronca85/folio-for-everyone/edit/master/src/members/example.md) as the template.
+**Use [this file](https://github.com/ronca85/folio-for-everyone/edit/master/src/members/example.md) as the template.**
 
-* Create a new file and paste the content from the example.md file *
+*Create a new file [HERE](https://github.com/ronca85/folio-for-everyone/edit/master/src/members/) and paste the content from the example.md file*
 
 Now replace existing text with your information. Every piece of information you input is optional. Remove what you don't need or what doesn't apply to your case.
 
