@@ -56,3 +56,9 @@ Replace existing text with your information. Every piece of information you inpu
 	* network: ``` Lists social networks you decide to set. ```
 	  - text: ``` Text to be shown on the screen. ```
 	    url: ``` Link to the social media page. ```
+
+* footer: ``` Final section on the page. ```
+  * email: ``` Setup your email template here. ```
+    * address: ``` Your email address goes here. ```
+    * subject: ``` Placeholder subject of the message. This will show up after someone clicks your email. ```
+    * body: ``` Placeholder body of the message. ```
