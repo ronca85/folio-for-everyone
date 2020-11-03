@@ -11,7 +11,9 @@ After the new file is included Netlify takes over and generates your page
 
 Use [this file](https://github.com/ronca85/folio-for-everyone/edit/master/src/members/example.md) as the template.
 
-Replace existing text with your information. Every piece of information you input is optional. Remove what you don't need or what doesn't apply to your case.
+* Create a new file and paste the content from the example.md file *
+
+Now replace existing text with your information. Every piece of information you input is optional. Remove what you don't need or what doesn't apply to your case.
 
 * head:
   * font: ``` use googlefonts for this. pick the one you want to use and paste its link here ```
