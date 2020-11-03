@@ -1,7 +1,7 @@
 ---
 head:
   full_name: "Marko Ronik"
-  font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
+  font: "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
   meta:
     title: "meta title"
     description: "meta description"

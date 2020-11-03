@@ -5,7 +5,7 @@ head:
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
-    banner_url: ""
+    banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
     theme_color: "#d9afa3"
 
 page:
