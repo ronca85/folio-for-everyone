@@ -19,9 +19,9 @@
 
 	perspective: 600px;
 
-	@for $i from 1 through 6 {
+	@for $i from 1 through 3 {
 		&.-delay-#{$i} > * {
-			transition-delay: $speed * 6 + $i * 0.375s;
+			transition-delay: $speed * 3 + $i * 0.375s;
 		}
 	}
 
@@ -31,8 +31,8 @@
 		transform: translate3d(0, 100%, 0) rotateZ(-15deg);
 		transform-origin: top right;
 		opacity: 0;
-		transition: opacity $speed * 8 $easing-long, transform $speed * 6 $easing-long;
-		transition-delay: $speed * 6;
+		transition: opacity $speed * 4 $easing-long, transform $speed * 3 $easing-long;
+		transition-delay: $speed * 3;
 	}
 
 	&.is-inview > * {

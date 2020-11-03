@@ -23,14 +23,10 @@
 					{% if socials %}
 					<ul class="c-socials-list">
 						{%- for project in socials.project -%}
-						<li class="c-socials-list_item || o-anim-item -network -medium-delay-{{ forloop.index }}"
-							data-scroll data-scroll-offset="15%"
+						<li class="c-socials-list_item || o-anim-item -network -short-delay-{{ forloop.index }}"
+							data-scroll data-scroll-offset="35%"
 						>
-							<a href="{{ project.url }}" class="o-link -strong" target="_blank" rel="nooponer noreferrer"
-								{% if page.customColors %}
-									style="color: {{ page.color }};"
-								{% endif %}
-							>
+							<a href="{{ project.url }}" class="o-link -strong" target="_blank" rel="nooponer noreferrer">
 								<span class="o-link_label">
 									{{ project.text }}
 								</span>

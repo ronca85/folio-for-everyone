@@ -3,22 +3,22 @@ head:
   full_name: "Sample Name"
   font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
   meta:
-    title: "meta title"
-    description: "meta description"
-    banner_url: "https://swabtheworld.com/upload/images/FB_share_EN.png"
+    title: "Portfolio | Sample Name 👋"
+    description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
+    banner_url: ""
     theme_color: "#d9afa3"
 
 page:
   customColors: true
-  transition_1: "#d99"
-  transition_2: "#d88"
+  transition_left: "#d99"
+  transition_right: "#d88"
   background: "#d9afa3"
   color: "#000"
 
 header:
   left: "2020"
   center: "Designer & Illustrator"
-  right: "Zagreb"
+  right: "City Name 🏙️"
   
 intro:
   show: true
@@ -39,6 +39,7 @@ about:
     - paragraph: "Worked on more than 20 projects."
     - paragraph: "Lived in 3 countries."
     - paragraph: "Speak 4 languages."
+    - paragraph: "Contact me by <a href='mailto:abc@gmail.com'>e-mail</a>"
 
 skills:
   show: true

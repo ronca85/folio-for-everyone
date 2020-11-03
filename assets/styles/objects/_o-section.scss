@@ -8,9 +8,6 @@ $section_offset: 20vh;
 	@media (max-width: $to-small) {
 		// margin-bottom: $section_offset;
 	}
-	
-	&.-github {
-	}
 }
 
 .o-section_inner {
@@ -18,6 +15,10 @@ $section_offset: 20vh;
 	min-height: 35vh;
 	// margin-top: $section_offset / 2;
 	// margin-bottom: $section_offset / 2;
+
+	&.-padding-bottom {
+		padding-bottom: 10vh;
+	}
 }
 
 .o-section-line_inner {

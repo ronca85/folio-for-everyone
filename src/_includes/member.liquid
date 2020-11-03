@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ head.title }}</title>
+		<title>{{ head.meta.title }}</title>
     
 		<meta name="description" content="{{ head.meta.description }}">
     
@@ -10,7 +10,7 @@
 		<meta property="og:url" content="{{ page.url }}">
 		<meta property="og:site_name" content="{{ head.meta.site_name }}">
 		<meta property="og:title" content="{{ head.meta.title }}">
-		<meta property="og:image" content="{{ head.meta.banner_url }}">
+		<meta property="og:image" content="{% if head.meta.banner_url.length > 12 %} {{ head.meta.banner_url }} {% else %} ../../assets/favicons/banner.png {% endif %}">
 		<meta property="og:description" content="{{ head.meta.description }}">
 
 		<meta property="twitter:card" content="summary">
@@ -46,12 +46,12 @@
 			<div class="o-transition">
 				<div class="o-transition_item"
 					{% if page.customColors %}
-						style="background-color: {{ page.transition_1 }};"
+						style="background-color: {{ page.transition_left }};"
 					{% endif %}
 				></div>
 				<div class="o-transition_item"
 					{% if page.customColors %}
-						style="background-color: {{ page.transition_2 }};"
+						style="background-color: {{ page.transition_right }};"
 					{% endif %}
 				></div>
 			</div>

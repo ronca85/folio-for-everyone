@@ -10,8 +10,8 @@ head:
 
 page:
   customColors: true
-  transition_1: "coral"
-  transition_2: "deepskyblue"
+  transition_left: "coral"
+  transition_right: "deepskyblue"
   background: "#f3bb1e"
   color: "#714679"
 
