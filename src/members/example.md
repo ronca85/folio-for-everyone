@@ -1,6 +1,5 @@
 ---
 head:
-  full_name: "Sample Name"
   font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
   meta:
     title: "Portfolio | Sample Name 👋"
@@ -73,7 +72,7 @@ work:
 socials:
   show: true
   title: "Socials"
-  project:
+  network:
     - text: "Behance"
       url: "https://www.behance.net/cuberto"
     - text: "Dribbble"

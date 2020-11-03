@@ -22,13 +22,13 @@
 				<div class="o-layout_item u-2/3@from-small u-1/2@from-medium">
 					{% if socials %}
 					<ul class="c-socials-list">
-						{%- for project in socials.project -%}
+						{%- for network in socials.network -%}
 						<li class="c-socials-list_item || o-anim-item -network -short-delay-{{ forloop.index }}"
 							data-scroll data-scroll-offset="35%"
 						>
-							<a href="{{ project.url }}" class="o-link -strong" target="_blank" rel="nooponer noreferrer">
+							<a href="{{ network.url }}" class="o-link -strong" target="_blank" rel="nooponer noreferrer">
 								<span class="o-link_label">
-									{{ project.text }}
+									{{ network.text }}
 								</span>
 								<span class="o-link_icon -external">
 									<span class="o-icon -ccw-135">

@@ -95,7 +95,7 @@ work:
 socials:
   show: true
   title: "Socials"
-  project:
+  network:
     - text: "Github"
       url: "https://github.com/ronca85"
     - text: "Linkedin"
