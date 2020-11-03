@@ -12,7 +12,7 @@ page:
   transition_left: "#d99"
   transition_right: "#d88"
   background: "#d9afa3"
-  color: "#000"
+  color: "#fff"
 
 header:
   left: "2020"
