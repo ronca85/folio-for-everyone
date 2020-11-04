@@ -13,6 +13,8 @@
 .c-site-footer_bottom {
 	padding-bottom: 2vh;
 	font-size: 75%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .c-site-footer_item {

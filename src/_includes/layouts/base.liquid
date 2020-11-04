@@ -58,35 +58,35 @@
 
 			<div class="o-loader"></div>
 	
-			{% include header.liquid %}
+			{% include sections/header.liquid %}
 
 			<div class="o-scroll" data-module-scroll="main" id="goto-top">
 
 				{% if intro.show %}
-					{% include intro.liquid %}
+					{% include sections/intro.liquid %}
 				{% endif %}
 				
 				{% if about.show %}
-					{% include about.liquid %}
+					{% include sections/about.liquid %}
 				{% endif %}
 				
 				{% if skills.show %}
-					{% include skills.liquid %}
+					{% include sections/skills.liquid %}
 				{% endif %}
 				
 				{% if work.show %}
-					{% include work.liquid %}
+					{% include sections/work.liquid %}
 				{% endif %}
 				
 				{% if socials.show %}
-					{% include socials.liquid %}
+					{% include sections/socials.liquid %}
 				{% endif %}
 				
 				{% if thanks.show %}
-					{% include thanks.liquid %}
+					{% include sections/thanks.liquid %}
 				{% endif %}
 				
-				{% include footer.liquid %}
+				{% include sections/footer.liquid %}
 				
 			</div>
 		</div>
