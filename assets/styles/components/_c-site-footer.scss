@@ -42,3 +42,26 @@
 		opacity: 1;
 	}
 }
+
+.c-site-footer_link.-repo-link {
+
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: currentColor;
+		transform: scaleY(0.1);
+		transform-origin: bottom left;
+		transition: transform $speed * 2 $easing, opacity $speed $easing;
+	}
+
+	&:hover:before {
+		transform: none;
+		opacity: 0.2;
+	}
+}
