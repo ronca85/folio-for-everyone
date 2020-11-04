@@ -5,19 +5,19 @@ head:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
     banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
-    theme_color: "#d9afa3"
+    theme_color: "#0d6761"
 
 page:
   customColors: true
-  transition_left: "#d99"
-  transition_right: "#d88"
-  background: "#d9afa3"
-  color: "#000"
+  transition_left: "#0b5b55"
+  transition_right: "#0a4d48"
+  background: "#0d6761"
+  color: "#fff1be"
 
 header:
-  left: "2020"
+  left: "🍕"
   center: "Designer & Illustrator"
-  right: "City Name 🏙️"
+  right: "City Name Here"
   
 intro:
   show: true

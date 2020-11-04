@@ -1,23 +1,23 @@
 ---
 head:
-  font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
+  font: "https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
     banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
-    theme_color: "#d9afa3"
+    theme_color: "#0d6761"
 
 page:
   customColors: true
-  transition_left: "#d99"
-  transition_right: "#d88"
-  background: "#d9afa3"
-  color: "#000"
+  transition_left: "#e5bef8"
+  transition_right: "#dbf8be"
+  background: "#e0dcd8"
+  color: "#282420"
 
 header:
-  left: "2020"
+  left: "🍕"
   center: "Designer & Illustrator"
-  right: "City Name 🏙️"
+  right: "City Name Here"
   
 intro:
   show: true
