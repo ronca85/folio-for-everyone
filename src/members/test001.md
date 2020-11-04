@@ -1,10 +1,10 @@
 ---
 head:
-  font: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
+  font: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
-    banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
+    banner_url: ""
     theme_color: "#0d6761"
 
 page:
@@ -44,21 +44,48 @@ skills:
   show: true
   title: "Skills"
   category:
-    - title: "Design tools"
+    - title: "Mockups"
       tools:
       - name: "Photoshop"
       - name: "Illustrator"
-      - name: "Sketch"
       - name: "Figma"
-    - title: "Computer languages"
+    - title: "CSS Frame­works/Metho­do­lo­gies"
       tools:
-      - name: "HTML"
-      - name: "CSS"
-      - name: "JS"
-    - title: "...and more"
+      - name: "SCSS"
+      - name: "Bootstrap"
+      - name: "BEM"
+      - name: "ITCSS"
+      - name: "OOCSS"
+      - name: "SMACS"
+      - name: "InuitCSS"
+      - name: "TailwindCSS"
+    - title: "JS Frameworks"
       tools:
-      - name: "Blender"
-      - name: "After Effects"
+      - name: "jQuery/VanillaJS"
+      - name: "VueJS"
+      - name: "NuxtJS"
+    - title: "Wordpress"
+      tools:
+      - name: "Custom Themes"
+      - name: "PHP"
+      - name: "ACF"
+      - name: "Twig"
+    - title: "Libraries used"
+      tools:
+      - name: "GSAP"
+      - name: "ScrollMagic"
+      - name: "AnimeJS"
+      - name: "Swiper"
+      - name: "Slick slider"
+      - name: "PixiJS"
+      - name: "ThreeJS"
+    - title: "Bundlers and more"
+      tools:
+      - name: "Gulp"
+      - name: "BabelJS"
+      - name: "Browsersync"
+      - name: "ParcelJS"
+      - name: "Webpack"
 
 work:
   show: true
@@ -73,20 +100,10 @@ socials:
   show: true
   title: "Socials"
   network:
-    - text: "Behance"
-      url: "https://www.behance.net/cuberto"
-    - text: "Dribbble"
-      url: "https://dribbble.com/cuberto"
     - text: "Github"
       url: "https://github.com/Cuberto"
-    - text: "Facebook"
-      url: "https://www.facebook.com/Cuberto.design"
     - text: "Twitter"
       url: "https://twitter.com/cuberto"
-    - text: "Instagram"
-      url: "https://www.instagram.com/cubertodesign/"
-    - text: "Youtube"
-      url: "https://www.youtube.com/CubertoDesign"
     - text: "Linkedin"
       url: "https://www.linkedin.com/company/cuberto/"
 
