@@ -6,7 +6,7 @@
 
 or 
 
-2. If you don't have or want an account on Github you can **[email](mailto:marko.ronik@gmail.com)** me and I'll create one for you
+2. If you don't have or want an account on Github copy content of [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example.md), edit the file to your liking and then send the file to me and I'll generate for page manually. My email is **[email](mailto:marko.ronik@gmail.com)**
 
 ## How to generate portfolio page in detail
 
@@ -16,13 +16,13 @@ or
 
 3. *Create a new file [HERE](https://github.com/ronca85/folio-for-everyone/new/master/src/members). Name it **_desired-name.md_** and paste the content from [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example.md) file*
 
-4. Now replace existing text with your information. Every piece of information you input is optional. Remove what you don't need or what doesn't apply to your case.
+4. Now replace existing text with your information. Every piece of information is optional. Remove what you don't need or what doesn't apply to your case.
 
 5. *Create pull request*
 
 6. After I process the request your portfolio page will be generated here: https://folio-for-everyone.netlify.app/members/desired-name
 
-See the example page **_[here](https://folio-for-everyone.netlify.app/members/example)_**. Keep in mind the base URL might change at any point.
+The example page is approximately what your page will look like: **_[here](https://folio-for-everyone.netlify.app/members/example)_**. Keep in mind the base URL might (but probably won't) change at any point.
 
 You can also download the repo, generate your portfolio page and host it on your own.
 
