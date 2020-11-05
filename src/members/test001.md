@@ -93,8 +93,14 @@ work:
   project:
     - text: "Genesis Vision"
       url: "https://genesis.vision/"
+      image:
+        - url: "http://picsum.photos/600/450?v=1"
+        - description: "alt text"
     - text: "Wambi"
       url: "https://wambi.org/"
+      image:
+        - url: "http://picsum.photos/400/400?v=1"
+        - description: "alt text"
 
 socials:
   show: true

@@ -1,0 +1,40 @@
+
+.c-work-image-hover {
+
+	position: relative;
+	white-space: nowrap;
+	width: 65%;
+	
+	&:hover {
+		.c-work-image-wrap {
+			opacity: 0.8;
+			transform: none;
+			transition-delay: 0.3s;
+		}
+	}
+}
+
+.c-work-image-wrap {
+	// max-width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	pointer-events: none;
+	transform: translate(25%, 50%) skew(7deg, -15deg) rotateZ(25deg);
+	opacity: 0;
+	transform-origin: bottom left;
+	transition: opacity $speed * 2 $easing-long, transform $speed * 3 $easing-long;
+	transition-delay: 0.1s;
+
+	@media (max-width:$to-small) {
+		left: 100%;
+		width: 30vw;
+	}
+
+	@media (min-width:$from-small) {
+		width: 15vw;
+		margin-left: -12.5vw;
+	}
+}

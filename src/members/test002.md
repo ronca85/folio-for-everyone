@@ -1,23 +1,23 @@
 ---
 head:
-  font: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
+  font: "no font :)"
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
-    banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
-    theme_color: "#d9afa3"
+    banner_url: ""
+    theme_color: "#756b3e"
 
 page:
   customColors: true
-  transition_left: "#d99"
-  transition_right: "#d88"
-  background: "#d9afa3"
-  color: "#000"
+  transition_left: "#645c35"
+  transition_right: "#544d2c"
+  background: "#756b3e"
+  color: "#fff"
 
 header:
-  left: "2020"
-  center: "Designer & Illustrator"
-  right: "City Name 🏙️"
+  left: "2K20"
+  center: "folio"
+  right: "John Doe"
   
 intro:
   show: true
@@ -44,21 +44,48 @@ skills:
   show: true
   title: "Skills"
   category:
-    - title: "Design tools"
+    - title: "Mockups"
       tools:
       - name: "Photoshop"
       - name: "Illustrator"
-      - name: "Sketch"
       - name: "Figma"
-    - title: "Computer languages"
+    - title: "CSS Frame­works/Metho­do­lo­gies"
       tools:
-      - name: "HTML"
-      - name: "CSS"
-      - name: "JS"
-    - title: "...and more"
+      - name: "SCSS"
+      - name: "Bootstrap"
+      - name: "BEM"
+      - name: "ITCSS"
+      - name: "OOCSS"
+      - name: "SMACS"
+      - name: "InuitCSS"
+      - name: "TailwindCSS"
+    - title: "JS Frameworks"
       tools:
-      - name: "Blender"
-      - name: "After Effects"
+      - name: "jQuery/VanillaJS"
+      - name: "VueJS"
+      - name: "NuxtJS"
+    - title: "Wordpress"
+      tools:
+      - name: "Custom Themes"
+      - name: "PHP"
+      - name: "ACF"
+      - name: "Twig"
+    - title: "Libraries used"
+      tools:
+      - name: "GSAP"
+      - name: "ScrollMagic"
+      - name: "AnimeJS"
+      - name: "Swiper"
+      - name: "Slick slider"
+      - name: "PixiJS"
+      - name: "ThreeJS"
+    - title: "Bundlers and more"
+      tools:
+      - name: "Gulp"
+      - name: "BabelJS"
+      - name: "Browsersync"
+      - name: "ParcelJS"
+      - name: "Webpack"
 
 work:
   show: true
@@ -67,37 +94,22 @@ work:
     - text: "Genesis Vision"
       url: "https://genesis.vision/"
       image:
-        - url: "http://picsum.photos/640/480?v=1"
+        - url: "http://picsum.photos/500/300?v=1"
         - description: "alt text"
     - text: "Wambi"
       url: "https://wambi.org/"
       image:
-        - url: "http://placekitten.com/400/600"
-        - description: "alt text"
-    - text: "No image"
-      url: "https://genesis.vision/"
-      image:
-        - url: ""
+        - url: "http://picsum.photos/400/400?v=1"
         - description: "alt text"
 
 socials:
   show: true
   title: "Socials"
   network:
-    - text: "Behance"
-      url: "https://www.behance.net/cuberto"
-    - text: "Dribbble"
-      url: "https://dribbble.com/cuberto"
     - text: "Github"
       url: "https://github.com/Cuberto"
-    - text: "Facebook"
-      url: "https://www.facebook.com/Cuberto.design"
     - text: "Twitter"
       url: "https://twitter.com/cuberto"
-    - text: "Instagram"
-      url: "https://www.instagram.com/cubertodesign/"
-    - text: "Youtube"
-      url: "https://www.youtube.com/CubertoDesign"
     - text: "Linkedin"
       url: "https://www.linkedin.com/company/cuberto/"
 

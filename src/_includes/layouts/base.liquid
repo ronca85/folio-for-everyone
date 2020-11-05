@@ -16,7 +16,7 @@
 		<meta property="twitter:card" content="summary">
 		<meta property="twitter:url" content="{{ page.url }}">
 		<meta property="twitter:title" content="{{ head.meta.title }}">
-		<meta property="twitter:image" content="{{ head.meta.banner_url }}">
+		<meta property="twitter:image" content="{% if head.meta.banner_url.length > 12 %} {{ head.meta.banner_url }} {% else %} ../../assets/favicons/banner.png {% endif %}">
 		<meta property="twitter:description" content="{{ head.meta.description }}">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
 
 		<link id="stylesheet" rel="stylesheet" href="../../assets/styles/main.css" media="all" onload="this.media='all'; this.onload=null; this.isLoaded=true">
 
-		<link href="{{ head.font }}" rel="stylesheet">
+		<link href="{% if head.font.length > 40 %} {{ head.font }} {% else %} https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap {% endif %}" rel="stylesheet">
 	</head>
 	<body
 		{% if page.customColors %}

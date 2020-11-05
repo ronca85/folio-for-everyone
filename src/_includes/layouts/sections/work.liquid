@@ -27,7 +27,7 @@
 							class="o-anim-item"
 							data-scroll data-scroll-offset="25%"
 						>
-							<a href="{{ project.url }}" class="o-link -work" target="_blank" rel="noopener noreferrer">
+							<a href="{{ project.url }}" class="o-link -work || c-work-image-hover" target="_blank" rel="noopener noreferrer">
 								<span class="o-link_label">
 									{{ project.text }}
 								</span>
@@ -41,6 +41,15 @@
 										</svg>
 									</span>
 								</span>
+								{%- for image in project.image -%}
+									{% if image.url.length > 12 %}
+										<div class="c-work-image-wrap">
+											<div class="o-ratio u-4:3">
+												<img class="c-work-image" data-scroll data-scroll-call="toggleLazy, Scroll, main" data-scroll-lazy="{{ image.url }}" alt="{{ image.description }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+											</div>
+										</div>
+									{% endif %}
+								{%- endfor -%}
 							</a>
 						</li>
 						{%- endfor -%}
