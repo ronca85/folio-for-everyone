@@ -16,7 +16,7 @@ page:
 
 header:
   left: "2020"
-  center: "Project Manager"
+  center: "Designer & Illustrator"
   right: "City Name 🏙️"
   
 intro:
@@ -44,19 +44,24 @@ skills:
   show: true
   title: "Skills"
   category:
-    - title: "Tools"
+    - title: "I make..."
       tools:
-      - name: "Trello"
-      - name: "JIRA"
-      - name: "Slack"
-      - name: "Notion"
-    - title: "Certificates"
+      - name: "Pixel Art"
+      - name: "Animations"
+      - name: "Pecil drawings"
+      - name: "3D models"
+      - name: "Packaging design"
+    - title: "Software I use"
       tools:
-      - name: "PMI PMP Algebra 2012."
-      - name: "Google Udacity Project Manager Nanodegree"
-    - title: "...and more"
+      - name: "Photoshop"
+      - name: "Illustrator"
+      - name: "Sketch"
+    - title: "Web Design"
       tools:
-      - name: "Google AdWords"
+      - name: "Animated banners"
+      - name: "HTML"
+      - name: "CSS"
+      - name: "GSAP"
 
 work:
   show: true
