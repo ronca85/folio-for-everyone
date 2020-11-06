@@ -6,7 +6,7 @@
 
 or 
 
-2. If you don't have or want an account on Github copy content of [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example.md), edit the file to your liking and then send the file to me and I'll generate for page manually. My email is **[email](mailto:marko.ronik@gmail.com)**
+2. If you don't have or want an account on Github copy content of [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example-designer-illustrator.md), edit the file to your liking and then send the file to me and I'll generate for page manually. My email is **[email](mailto:marko.ronik@gmail.com)**
 
 ## How to generate portfolio page in detail
 
@@ -14,7 +14,7 @@ or
 
 2. *Fork the repository*
 
-3. *Create a new file [HERE](https://github.com/ronca85/folio-for-everyone/new/master/src/members). Name it **_desired-name.md_** and paste the content from [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example.md) file*
+3. *Create a new file [HERE](https://github.com/ronca85/folio-for-everyone/new/master/src/members). Name it **_desired-name.md_** and paste the content from [this file](https://raw.githubusercontent.com/ronca85/folio-for-everyone/master/src/members/example-designer-illustrator.md) file*
 
 4. Now replace existing text with your information. Every piece of information is optional. Remove what you don't need or what doesn't apply to your case.
 
