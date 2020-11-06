@@ -12,7 +12,7 @@ export default class extends module {
             smooth: true,
             // smoothMobile: true,
             // touchMultiplier: 1,
-            lerp: 0.075,
+            lerp: 0.065,
         });
 
         this.scroll.on('call', (func,way,obj,id) => {

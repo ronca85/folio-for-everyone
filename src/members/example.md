@@ -1,10 +1,10 @@
 ---
 head:
-  font: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
+  font: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
-    banner_url: "https://s.imgur.com/images/logo-1200-630.jpg?2"
+    banner_url: "https://i.postimg.cc/sXxzV24n/folio-banner.png"
     theme_color: "#d9afa3"
 
 page:
@@ -16,7 +16,7 @@ page:
 
 header:
   left: "2020"
-  center: "Designer & Illustrator"
+  center: "Project Manager"
   right: "City Name 🏙️"
   
 intro:
@@ -38,27 +38,25 @@ about:
     - paragraph: "Worked on more than 20 projects."
     - paragraph: "Lived in 3 countries."
     - paragraph: "Speak 4 languages."
-    - paragraph: "Contact me by <a href='mailto:abc@gmail.com'>e-mail</a>"
+    - paragraph: "Contact me by <a href='mailto:example@example.com'>e-mail</a>"
 
 skills:
   show: true
   title: "Skills"
   category:
-    - title: "Design tools"
+    - title: "Tools"
       tools:
-      - name: "Photoshop"
-      - name: "Illustrator"
-      - name: "Sketch"
-      - name: "Figma"
-    - title: "Computer languages"
+      - name: "Trello"
+      - name: "JIRA"
+      - name: "Slack"
+      - name: "Notion"
+    - title: "Certificates"
       tools:
-      - name: "HTML"
-      - name: "CSS"
-      - name: "JS"
+      - name: "PMI PMP Algebra 2012."
+      - name: "Google Udacity Project Manager Nanodegree"
     - title: "...and more"
       tools:
-      - name: "Blender"
-      - name: "After Effects"
+      - name: "Google AdWords"
 
 work:
   show: true
@@ -104,7 +102,7 @@ socials:
 footer:
   email:
     show: true
-    address: "mymail@example.com"
+    address: "example@example.com"
     subject: "Folio inquiry"
     body: "Contacting through folio page"
 ---

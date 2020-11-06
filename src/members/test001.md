@@ -1,6 +1,6 @@
 ---
 head:
-  font: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+  font: "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500;700&display=swap"
   meta:
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
@@ -38,7 +38,7 @@ about:
     - paragraph: "Worked on more than 20 projects."
     - paragraph: "Lived in 3 countries."
     - paragraph: "Speak 4 languages."
-    - paragraph: "Contact me by <a href='mailto:abc@gmail.com'>e-mail</a>"
+    - paragraph: "Contact me by <a href='mailto:example@example.com'>e-mail</a>"
 
 skills:
   show: true
@@ -116,7 +116,7 @@ socials:
 footer:
   email:
     show: true
-    address: "mymail@example.com"
+    address: "example@example.com"
     subject: "Folio inquiry"
     body: "Contacting through folio page"
 ---

@@ -12,7 +12,7 @@ $assets-path: "../"  !default;
 
 // Typefaces
 // =============================================================================
-$font-sans-serif: 'Poppins', 'Montserrat', 'Playfair Display', sans-serif;
+$font-sans-serif: 'Poppins', 'IBM Plex Mono', 'Montserrat', 'Zilla Slab', sans-serif;
 
 // Typography
 // =============================================================================
@@ -33,7 +33,6 @@ $line-height-h: $line-height;
 $light:  300;
 $medium: 500;
 $bold:   700;
-$black:  900;
 
 // Transitions
 // =============================================================================
