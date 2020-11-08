@@ -2,6 +2,7 @@
 head:
   font: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;700&display=swap"
   meta:
+    site_name: "Personal portfolio page ✨"
     title: "Portfolio | Sample Name 👋"
     description: "I am a kick-ass Project Manager from City Name, always looking for opportunities to create beautiful products and experiences."
     banner_url: ""

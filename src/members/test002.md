@@ -2,6 +2,7 @@
 head:
   font: "no font :)"
   meta:
+    site_name: "Personal portfolio page ✨"
     title: "Portfolio | Sample Name 👋"
     description: "I am a Designer and Illustrator from City Name, always looking for opportunities to create beautiful products and experiences."
     banner_url: ""
