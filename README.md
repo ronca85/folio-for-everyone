@@ -53,6 +53,13 @@ You can also download the repo, generate your portfolio page and host it on your
 |            |        | `banner_url`  | You can create an image that will be shown when sharing page. Recommended dimensions are 1200px x 630px. Use services like [postimage](https://postimages.org/) to host your image |
 |            |        | `theme_color` | Theme color is the color of the address bar on android devices |
 
+### Share card previews
+
+![Twitter share card](https://user-images.githubusercontent.com/13383578/98464172-5269c400-21c1-11eb-850f-747cf922bf1a.png)
+![Facebook share card](https://user-images.githubusercontent.com/13383578/98464175-54cc1e00-21c1-11eb-842e-1e3fdd9c16b8.png)
+![Linkedin share card](https://user-images.githubusercontent.com/13383578/98464177-5695e180-21c1-11eb-8471-58a2e5464bd3.png)
+![Discord share card](https://user-images.githubusercontent.com/13383578/98463954-a83d6c80-21bf-11eb-971c-ff763d1c4c2a.png)
+
 | Section    | Block         | Description                                                   |
 | ---------- | ------------- | ------------------------------------------------------------- |
 | `intro`    |               | Introduce yourself here                                       |
