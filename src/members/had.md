@@ -6,14 +6,14 @@ head:
     title: "ℌ - Had digital agency"
     description: "Had aims to become a leader in merging excellent digital experiences with bullet-proof web design."
     banner_url: "https://i.postimg.cc/sXxzV24n/folio-banner.png"
-    theme_color: "#140312"
+    theme_color: "#fbfafd"
 
 page:
   customColors: true
-  transition_left: "#180716"
-  transition_right: "#221120"
-  background: "#140312"
-  color: "#EFDE43"
+  transition_left: "#ffffff"
+  transition_right: "#fbfbfb"
+  background: "#fbfafd"
+  color: "#060609"
 
 header:
   left: "2022"
@@ -33,7 +33,10 @@ about:
   description:
     - paragraph: "The name is Had, croatian for 'The underworld' (Hades)"
     - paragraph: "Started in 2022"
-    - paragraph: "Three devs"
+    - paragraph: "Visually impressive websites"
+    - paragraph: "Bulletproof webshops"
+    - paragraph: "Gorgeous Apps"
+    - paragraph: "Booking platforms"
     - paragraph: "Headquartered in Bjelovar"
     - paragraph: "10+ years of experience"
     - paragraph: "Worked on more than 50 projects"
@@ -41,24 +44,27 @@ about:
 
 skills:
   show: true
-  title: "Skills"
+  title: "Projects"
   category:
-    - title: "We create"
+    - title: "dolazim.hr"
       tools:
-      - name: "Visually impressive websites"
-      - name: "Bulletproof webshops"
-      - name: "Gorgeous apps"
-      - name: "Booking platforms"
-    - title: "We use"
+      - name: "Visuallyhhhbsites"
+    - title: "Cvjećarnica Minnie"
       tools:
-      - name: "Figma, xd, Sketch"
-      - name: "Vue, Angular"
-      - name: "PHP/Symfony, Python"
-      - name: "Typescript, Node.js, PostgreSQl, Docker, Vue3"
+      - name: "Figmketch"
+    - title: "Arena Glamping"
+      tools:
+      - name: "Figmatch"
+    - title: "Yammat.fm"
+      tools:
+      - name: "PHPjjjjjjthon"
+    - title: "Yammat.fm"
+      tools:
+      - name: "PHPjjjjjjthon"
 
 work:
   show: true
-  title: "Work"
+  title: "See our work 👀"
   project:
     - text: "Dolazim.hr"
       url: "https://dolazim.hr"
